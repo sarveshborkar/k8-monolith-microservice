@@ -1,0 +1,17 @@
+# Base image
+FROM python:3.9-slim
+
+# Set working directory
+WORKDIR /app
+
+# Copy the service file into the container
+COPY shortening_service.py /app
+
+# Install dependencies
+RUN pip install flask redis
+
+# Expose the port the service runs on
+EXPOSE 5001
+
+# Run the application
+CMD ["python", "shortening_service.py"]
