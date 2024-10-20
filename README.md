@@ -1,2 +1,2 @@
-# Kubernetes for Monolthic & Microservice architecture
+# Kubernetes for scaling monolithic and microservice based application
 
